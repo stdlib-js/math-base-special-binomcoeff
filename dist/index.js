@@ -1,0 +1,5 @@
+"use strict";var b=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var g=b(function(x,d){
+var l=require('@stdlib/constants-float32-max-safe-integer/dist'),n=require('@stdlib/constants-float32-pinf/dist'),c=require('@stdlib/math-base-assert-is-integerf/dist'),N=require('@stdlib/math-base-assert-is-nanf/dist'),E=require('@stdlib/math-base-assert-is-oddf/dist'),F=require('@stdlib/math-base-special-floorf/dist'),I=require('@stdlib/math-base-special-gcdf/dist'),i=require('@stdlib/number-float64-base-to-float32/dist');function o(e,r){var a,f,u,v,t,s,q;if(N(e)||N(r))return NaN;if(!c(e)||!c(r))return NaN;if(r<0||(f=i(1),e<0&&(e=-e+r-1,E(r)&&(f=i(f*-1))),r>e))return 0;if(r===0||r===e)return f;if(r===1||r===e-1)return i(f*e);for(e-r<r&&(r=e-r),q=F(l/e),a=i(1),t=1;t<=r&&!(a>q);t++)a=i(a*e),a=i(a/t),e-=1;return t>r?i(f*a):(u=o(e,r-t+1),u===n?i(f*i(u)):(v=o(r,r-t+1),s=I(u,v),u=i(u/s),v=i(v/s),a=i(a/v),i(f*a*u)))}d.exports=o
+});var m=g();module.exports=m;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
