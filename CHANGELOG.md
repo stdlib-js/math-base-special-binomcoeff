@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-24)
+## Unreleased (2025-10-01)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`f275965`](https://github.com/stdlib-js/stdlib/commit/f275965c27882f0dcae4b9caf28e12c7f9b834ad) - **test:** add tests to achieve full coverage in `binomcoeff` _(by Philipp Burckhardt)_
 -   [`72d37f3`](https://github.com/stdlib-js/stdlib/commit/72d37f32cd8f38d0a073abe5180969af294dc975) - **refactor:** modify C implementation to accept `float` values instead of `int32` in `math/base/special/binomcoeff` [(#7946)](https://github.com/stdlib-js/stdlib/pull/7946) _(by Gunj Joshi, Athan Reines)_
 -   [`6b79837`](https://github.com/stdlib-js/stdlib/commit/6b7983771d584610fb460be6d521a98976e4da5e) - **bench:** fix C target in Makefile _(by Karan Anand)_
 -   [`999cdb2`](https://github.com/stdlib-js/stdlib/commit/999cdb245ef44457920ac1fdc0d0e4dc67862e75) - **test:** remove non-number inputs from `NaN` test cases _(by Karan Anand)_
@@ -51,11 +52,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gunj Joshi
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
