@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-01)
+## Unreleased (2025-10-02)
 
 <section class="features">
 
@@ -15,6 +15,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="reverts">
+
+### Reverts
+
+-   [`4a75f6d`](https://github.com/stdlib-js/stdlib/commit/4a75f6df054e6d718e40a37737938996ddd43006) - undo commits adding tests for full code coverage
+
+</section>
+
+<!-- /.reverts -->
 
 <section class="breaking-changes">
 
@@ -34,6 +44,7 @@
 
 <details>
 
+-   [`4a75f6d`](https://github.com/stdlib-js/stdlib/commit/4a75f6df054e6d718e40a37737938996ddd43006) - **revert:** undo commits adding tests for full code coverage _(by Philipp Burckhardt)_
 -   [`f275965`](https://github.com/stdlib-js/stdlib/commit/f275965c27882f0dcae4b9caf28e12c7f9b834ad) - **test:** add tests to achieve full coverage in `binomcoeff` _(by Philipp Burckhardt)_
 -   [`72d37f3`](https://github.com/stdlib-js/stdlib/commit/72d37f32cd8f38d0a073abe5180969af294dc975) - **refactor:** modify C implementation to accept `float` values instead of `int32` in `math/base/special/binomcoeff` [(#7946)](https://github.com/stdlib-js/stdlib/pull/7946) _(by Gunj Joshi, Athan Reines)_
 -   [`6b79837`](https://github.com/stdlib-js/stdlib/commit/6b7983771d584610fb460be6d521a98976e4da5e) - **bench:** fix C target in Makefile _(by Karan Anand)_
