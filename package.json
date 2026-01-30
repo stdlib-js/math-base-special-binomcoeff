@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-binomcoeff",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Compute the binomial coefficient as a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -44,15 +44,15 @@
     "@stdlib/constants-float32-pinf": "^0.2.2",
     "@stdlib/math-base-assert-is-integerf": "github:stdlib-js/math-base-assert-is-integerf#main",
     "@stdlib/math-base-assert-is-nanf": "^0.2.2",
-    "@stdlib/math-base-assert-is-oddf": "github:stdlib-js/math-base-assert-is-oddf#main",
-    "@stdlib/math-base-napi-binary": "^0.3.0",
+    "@stdlib/math-base-assert-is-oddf": "^0.1.0",
+    "@stdlib/math-base-napi-binary": "^0.3.1",
     "@stdlib/math-base-special-floorf": "^0.2.2",
     "@stdlib/math-base-special-gcdf": "github:stdlib-js/math-base-special-gcdf#main",
     "@stdlib/number-float64-base-to-float32": "^0.2.2",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/console-log-each-map": "^0.1.0",
     "@stdlib/constants-float32-eps": "^0.2.2",
     "@stdlib/math-base-special-absf": "^0.2.2",
     "@stdlib/random-array-discrete-uniform": "^0.2.1",
