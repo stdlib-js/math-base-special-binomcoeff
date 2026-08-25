@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-30)
+## Unreleased (2026-08-25)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`b542995`](https://github.com/stdlib-js/stdlib/commit/b5429954e481f5f484fe45386d12ddd527157389) - **test:** migrate `math/base/special/binomcoeff` to ULP-based assertions [(#14572)](https://github.com/stdlib-js/stdlib/pull/14572) _(by Philipp Burckhardt)_
 -   [`a092ede`](https://github.com/stdlib-js/stdlib/commit/a092edebd55a2514135088f5261375e8f83fdcde) - **test:** migrate `math/base/special/binomcoeff` to ULP-based testing [(#11720)](https://github.com/stdlib-js/stdlib/pull/11720) _(by Mandeep2333, Athan Reines)_
 -   [`9229dd7`](https://github.com/stdlib-js/stdlib/commit/9229dd78fa82c5f863dbc51a9588314d53a97c44) - **bench:** refactor to use string interpolation in `math/base/special` [(#11386)](https://github.com/stdlib-js/stdlib/pull/11386) _(by Karan Anand)_
 
@@ -25,11 +26,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
 -   Mandeep2333
+-   Philipp Burckhardt
 
 </section>
 
