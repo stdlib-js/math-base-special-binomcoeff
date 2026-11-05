@@ -61,38 +61,32 @@ The [binomial coefficient][binomial-coefficient] can be generalized to negative 
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-binomcoeff
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-binomcoeff = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-binomcoeff@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var binomcoeff = require( 'path/to/vendor/umd/math-base-special-binomcoeff/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-binomcoeff@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.binomcoeff;
-})();
-</script>
+var binomcoeff = require( '@stdlib/math-base-special-binomcoeff' );
 ```
 
 #### binomcoeff( n, k )
@@ -152,15 +146,10 @@ v = binomcoeff( 5.5, 2 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-binomcoeff@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var binomcoeff = require( '@stdlib/math-base-special-binomcoeff' );
 
 var opts = {
     'dtype': 'int32'
@@ -169,11 +158,6 @@ var n = discreteUniform( 100, -10, 30, opts );
 var k = discreteUniform( 100, 0, 20, opts );
 
 logEachMap( 'binomcoeff(%d,%d) = %0.4f', n, k, binomcoeff );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -182,7 +166,90 @@ logEachMap( 'binomcoeff(%d,%d) = %0.4f', n, k, binomcoeff );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/binomcoeff.h"
+```
+
+#### stdlib_base_binomcoeff( n, k )
+
+Evaluates the [binomial coefficient][binomial-coefficient] of two integers `n` and `k` as a single-precision floating-point number.
+
+```c
+float v = stdlib_base_binomcoeff( 8.0f, 2.0f );
+// returns 28.0f
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] float` input value.
+-   **k**: `[in] float` input value.
+
+```c
+float stdlib_base_binomcoeff( const float n, const float k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/binomcoeff.h"
+#include <stdio.h>
+
+int main( void ) {
+    const float a[] = { 24.0f, 32.0f, 48.0f, 116.0f, 33.0f };
+    const float b[] = { 12.0f, 6.0f, 15.0f, 52.0f, 22.0f };
+
+    float out;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        out = stdlib_base_binomcoeff( a[ i ], b[ i ] );
+        printf( "binomcoeff(%f, %f) = %f\n", a[ i ], b[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
